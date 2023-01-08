@@ -21,5 +21,9 @@
 			</array>
 		</dict>
 	</dict>
+	<key>baseUrl</key>
+	<string>$(BASE_URL)</string>
+	<key>appName</key>
+	<string>$(PRODUCT_NAME)</string>
 </dict>
 </plist>

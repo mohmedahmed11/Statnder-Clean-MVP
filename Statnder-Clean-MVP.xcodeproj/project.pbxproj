@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		CEBB2273295A4AB30088656D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB2272295A4AB30088656D /* AppDelegate.swift */; };
 		CEBB2275295A4AB30088656D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB2274295A4AB30088656D /* SceneDelegate.swift */; };
-		CEBB2277295A4AB30088656D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB2276295A4AB30088656D /* ViewController.swift */; };
 		CEBB227A295A4AB30088656D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBB2278295A4AB30088656D /* Main.storyboard */; };
 		CEBB227C295A4AB30088656D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBB227B295A4AB30088656D /* Assets.xcassets */; };
 		CEBB227F295A4AB30088656D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBB227D295A4AB30088656D /* LaunchScreen.storyboard */; };
+		CEBB228F295A50460088656D /* EnvironmentConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB228E295A50460088656D /* EnvironmentConfig.swift */; };
+		CEBB2291295A52BF0088656D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB2290295A52BF0088656D /* ViewController.swift */; };
+		CEBB2293295A65E40088656D /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB2292295A65E40088656D /* UIView.swift */; };
+		CEBB2296295A6E540088656D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBB2295295A6E540088656D /* Home.storyboard */; };
+		CEBB2298295A6E8A0088656D /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBB2297295A6E8A0088656D /* Events.storyboard */; };
+		CEBB229A295A6EAE0088656D /* Todos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBB2299295A6EAE0088656D /* Todos.storyboard */; };
+		CEBB229C295A6ED30088656D /* Bookmark.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBB229B295A6ED30088656D /* Bookmark.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CEBB226F295A4AB30088656D /* Statnder-Clean-MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Statnder-Clean-MVP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBB2272295A4AB30088656D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBB2274295A4AB30088656D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEBB2276295A4AB30088656D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CEBB2279295A4AB30088656D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEBB227B295A4AB30088656D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEBB227E295A4AB30088656D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEBB2280295A4AB30088656D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEBB228A295A4BFC0088656D /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		CEBB228C295A4C150088656D /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		CEBB228E295A50460088656D /* EnvironmentConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentConfig.swift; sourceTree = "<group>"; };
+		CEBB2290295A52BF0088656D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEBB2292295A65E40088656D /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		CEBB2295295A6E540088656D /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		CEBB2297295A6E8A0088656D /* Events.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
+		CEBB2299295A6EAE0088656D /* Todos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Todos.storyboard; sourceTree = "<group>"; };
+		CEBB229B295A6ED30088656D /* Bookmark.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bookmark.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,71 @@
 		CEBB2271295A4AB30088656D /* Statnder-Clean-MVP */ = {
 			isa = PBXGroup;
 			children = (
-				CEBB2272295A4AB30088656D /* AppDelegate.swift */,
-				CEBB2274295A4AB30088656D /* SceneDelegate.swift */,
-				CEBB2276295A4AB30088656D /* ViewController.swift */,
-				CEBB2278295A4AB30088656D /* Main.storyboard */,
+				CEBB228D295A50180088656D /* Config */,
+				CEBB2286295A4ADD0088656D /* Hellpers */,
+				CEBB2289295A4B540088656D /* Services */,
+				CEBB2287295A4B040088656D /* Screens */,
+				CEBB2288295A4B360088656D /* Sorybords */,
 				CEBB227B295A4AB30088656D /* Assets.xcassets */,
-				CEBB227D295A4AB30088656D /* LaunchScreen.storyboard */,
 				CEBB2280295A4AB30088656D /* Info.plist */,
 			);
 			path = "Statnder-Clean-MVP";
+			sourceTree = "<group>";
+		};
+		CEBB2286295A4ADD0088656D /* Hellpers */ = {
+			isa = PBXGroup;
+			children = (
+				CEBB2294295A66210088656D /* Extenstions */,
+			);
+			path = Hellpers;
+			sourceTree = "<group>";
+		};
+		CEBB2287295A4B040088656D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				CEBB2290295A52BF0088656D /* ViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		CEBB2288295A4B360088656D /* Sorybords */ = {
+			isa = PBXGroup;
+			children = (
+				CEBB2278295A4AB30088656D /* Main.storyboard */,
+				CEBB229B295A6ED30088656D /* Bookmark.storyboard */,
+				CEBB2299295A6EAE0088656D /* Todos.storyboard */,
+				CEBB2297295A6E8A0088656D /* Events.storyboard */,
+				CEBB2295295A6E540088656D /* Home.storyboard */,
+				CEBB227D295A4AB30088656D /* LaunchScreen.storyboard */,
+			);
+			path = Sorybords;
+			sourceTree = "<group>";
+		};
+		CEBB2289295A4B540088656D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CEBB228D295A50180088656D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				CEBB228A295A4BFC0088656D /* Debug.xcconfig */,
+				CEBB228C295A4C150088656D /* Release.xcconfig */,
+				CEBB228E295A50460088656D /* EnvironmentConfig.swift */,
+				CEBB2272295A4AB30088656D /* AppDelegate.swift */,
+				CEBB2274295A4AB30088656D /* SceneDelegate.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		CEBB2294295A66210088656D /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				CEBB2292295A65E40088656D /* UIView.swift */,
+			);
+			path = Extenstions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +195,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBB229C295A6ED30088656D /* Bookmark.storyboard in Resources */,
 				CEBB227F295A4AB30088656D /* LaunchScreen.storyboard in Resources */,
 				CEBB227C295A4AB30088656D /* Assets.xcassets in Resources */,
+				CEBB229A295A6EAE0088656D /* Todos.storyboard in Resources */,
 				CEBB227A295A4AB30088656D /* Main.storyboard in Resources */,
+				CEBB2296295A6E540088656D /* Home.storyboard in Resources */,
+				CEBB2298295A6E8A0088656D /* Events.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +212,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEBB2277295A4AB30088656D /* ViewController.swift in Sources */,
+				CEBB228F295A50460088656D /* EnvironmentConfig.swift in Sources */,
+				CEBB2293295A65E40088656D /* UIView.swift in Sources */,
 				CEBB2273295A4AB30088656D /* AppDelegate.swift in Sources */,
+				CEBB2291295A52BF0088656D /* ViewController.swift in Sources */,
 				CEBB2275295A4AB30088656D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +292,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +346,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,8 +358,9 @@
 		};
 		CEBB2284295A4AB30088656D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEBB228A295A4BFC0088656D /* Debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Dev";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -300,7 +377,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "PitaStudio.Statnder-Clean-MVP";
+				PRODUCT_BUNDLE_IDENTIFIER = "PitaStudio.Statnder-Clean-MVP-debug";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -310,6 +387,7 @@
 		};
 		CEBB2285295A4AB30088656D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEBB228C295A4C150088656D /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -346,7 +424,7 @@
 				CEBB2282295A4AB30088656D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		CEBB2283295A4AB30088656D /* Build configuration list for PBXNativeTarget "Statnder-Clean-MVP" */ = {
 			isa = XCConfigurationList;
@@ -355,7 +433,7 @@
 				CEBB2285295A4AB30088656D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
