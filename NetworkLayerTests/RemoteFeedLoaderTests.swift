@@ -72,23 +72,23 @@ final class Remote_Feed_Loader_Tests: XCTestCase {
     }
     
     class HTTPClinetSpy: HTTPClinet {
-        var messages = [(url: URL, completion:(Error?, HTTPURLResponse?) -> Void)]()
+        var messages = [(url: URL, completion:(HTTPClientResult) -> Void)]()
         
         var requestedURLs: [URL]  {
             messages.map { $0.url }
         }
         
-        func get(with url: URL, completion: @escaping (Error?, HTTPURLResponse?) -> Void) {
+        func get(with url: URL, completion: @escaping (HTTPClientResult) -> Void) {
             messages.append((url, completion))
         }
         
         func complete(with error: Error, at index: Int = 0) {
-            messages[index].completion(error, nil)
+            messages[index].completion(.failuer(error))
         }
         
         func complete(statusCode code: Int, at index: Int = 0) {
-            let response = HTTPURLResponse(url: messages[index].url, statusCode: code, httpVersion: nil, headerFields: nil)
-            messages[index].completion(nil, response)
+            let response = HTTPURLResponse(url: requestedURLs[index], statusCode: code, httpVersion: nil, headerFields: nil)!
+            messages[index].completion(.success(response ))
         }
     }
 
