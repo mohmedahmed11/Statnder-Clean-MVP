@@ -8,7 +8,7 @@
 import Foundation
 
 public protocol HTTPClinet {
-    func get(with url: URL, completion: @escaping (Error) -> Void)
+    func get(with url: URL, completion: @escaping (Error?, HTTPURLResponse?) -> Void)
 }
 
 public final class RemoteFeedLoader {
@@ -17,6 +17,7 @@ public final class RemoteFeedLoader {
     
     public enum Error: Swift.Error {
         case connectivity
+        case invalidData
     }
    
     public init(url: URL, client: HTTPClinet) {
@@ -25,8 +26,12 @@ public final class RemoteFeedLoader {
    }
    
     public func load(completion: @escaping (Error) -> Void) {
-        client.get(with: url) { error in
-            completion(.connectivity)
+        client.get(with: url) { error, response in
+            if response != nil {
+                completion(.invalidData)
+            }else {
+                completion(.connectivity)
+            }
         }
    }
 }
