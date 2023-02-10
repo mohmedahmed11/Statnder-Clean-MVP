@@ -25,6 +25,17 @@ final class Remote_Feed_Loader_Tests: XCTestCase {
         XCTAssertEqual(client.requestedURL, url )
     }
     
+    func test_load_Twise_requestDataFromURLTwise() {
+        let url = URL(string: "https://a-given-url.com")!
+        
+        let (sut, client) = makeSUT(url: url)
+        
+        sut.load()
+        sut.load()
+        
+        XCTAssertEqual(client.requestedURLs, [url, url] )
+    }
+    
     //MARK: - hellpers
     
     private func makeSUT(url: URL = URL(string: "https://a-url.com")!) -> (sut: RemoteFeedLoader, client: HTTPClinetSpy) {
@@ -36,9 +47,11 @@ final class Remote_Feed_Loader_Tests: XCTestCase {
     class HTTPClinetSpy: HTTPClinet {
         
         var requestedURL: URL?
+        var requestedURLs = [URL]()
         
         func get(with url: URL) {
             requestedURL = url
+            requestedURLs.append(url)
         }
     }
 
