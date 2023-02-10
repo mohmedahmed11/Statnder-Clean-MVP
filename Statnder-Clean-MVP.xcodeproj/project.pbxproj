@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE081C7129963E4E004C7B1B /* Statnder_Clean_MVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE081C7029963E4E004C7B1B /* Statnder_Clean_MVPTests.swift */; };
+		CE081C8029963E75004C7B1B /* NetworkLayer.docc in Sources */ = {isa = PBXBuildFile; fileRef = CE081C7F29963E75004C7B1B /* NetworkLayer.docc */; };
+		CE081C8629963E75004C7B1B /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE081C7C29963E75004C7B1B /* NetworkLayer.framework */; };
+		CE081C8D29963E75004C7B1B /* NetworkLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE081C8C29963E75004C7B1B /* NetworkLayerTests.swift */; };
+		CE081C8E29963E75004C7B1B /* NetworkLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = CE081C7E29963E75004C7B1B /* NetworkLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE081C9129963E75004C7B1B /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE081C7C29963E75004C7B1B /* NetworkLayer.framework */; };
+		CE081C9229963E75004C7B1B /* NetworkLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE081C7C29963E75004C7B1B /* NetworkLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CEBB2273295A4AB30088656D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB2272295A4AB30088656D /* AppDelegate.swift */; };
 		CEBB2275295A4AB30088656D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB2274295A4AB30088656D /* SceneDelegate.swift */; };
 		CEBB227A295A4AB30088656D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBB2278295A4AB30088656D /* Main.storyboard */; };
@@ -21,7 +28,59 @@
 		CEBB229C295A6ED30088656D /* Bookmark.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBB229B295A6ED30088656D /* Bookmark.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CE081C7229963E4E004C7B1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEBB2267295A4AB30088656D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEBB226E295A4AB30088656D;
+			remoteInfo = "Statnder-Clean-MVP";
+		};
+		CE081C8729963E75004C7B1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEBB2267295A4AB30088656D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE081C7B29963E75004C7B1B;
+			remoteInfo = NetworkLayer;
+		};
+		CE081C8929963E75004C7B1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEBB2267295A4AB30088656D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEBB226E295A4AB30088656D;
+			remoteInfo = "Statnder-Clean-MVP";
+		};
+		CE081C8F29963E75004C7B1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEBB2267295A4AB30088656D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE081C7B29963E75004C7B1B;
+			remoteInfo = NetworkLayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE081C9629963E75004C7B1B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE081C9229963E75004C7B1B /* NetworkLayer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		CE081C6E29963E4E004C7B1B /* Statnder-Clean-MVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Statnder-Clean-MVPTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE081C7029963E4E004C7B1B /* Statnder_Clean_MVPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statnder_Clean_MVPTests.swift; sourceTree = "<group>"; };
+		CE081C7C29963E75004C7B1B /* NetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE081C7E29963E75004C7B1B /* NetworkLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkLayer.h; sourceTree = "<group>"; };
+		CE081C7F29963E75004C7B1B /* NetworkLayer.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NetworkLayer.docc; sourceTree = "<group>"; };
+		CE081C8529963E75004C7B1B /* NetworkLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE081C8C29963E75004C7B1B /* NetworkLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerTests.swift; sourceTree = "<group>"; };
 		CEBB226F295A4AB30088656D /* Statnder-Clean-MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Statnder-Clean-MVP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBB2272295A4AB30088656D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBB2274295A4AB30088656D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,20 +100,71 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CEBB226C295A4AB30088656D /* Frameworks */ = {
+		CE081C6B29963E4E004C7B1B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE081C7929963E75004C7B1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE081C8229963E75004C7B1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE081C8629963E75004C7B1B /* NetworkLayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBB226C295A4AB30088656D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE081C9129963E75004C7B1B /* NetworkLayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE081C6F29963E4E004C7B1B /* Statnder-Clean-MVPTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE081C7029963E4E004C7B1B /* Statnder_Clean_MVPTests.swift */,
+			);
+			path = "Statnder-Clean-MVPTests";
+			sourceTree = "<group>";
+		};
+		CE081C7D29963E75004C7B1B /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				CE081C7E29963E75004C7B1B /* NetworkLayer.h */,
+				CE081C7F29963E75004C7B1B /* NetworkLayer.docc */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		CE081C8B29963E75004C7B1B /* NetworkLayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE081C8C29963E75004C7B1B /* NetworkLayerTests.swift */,
+			);
+			path = NetworkLayerTests;
+			sourceTree = "<group>";
+		};
 		CEBB2266295A4AB30088656D = {
 			isa = PBXGroup;
 			children = (
 				CEBB2271295A4AB30088656D /* Statnder-Clean-MVP */,
+				CE081C6F29963E4E004C7B1B /* Statnder-Clean-MVPTests */,
+				CE081C7D29963E75004C7B1B /* NetworkLayer */,
+				CE081C8B29963E75004C7B1B /* NetworkLayerTests */,
 				CEBB2270295A4AB30088656D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +173,9 @@
 			isa = PBXGroup;
 			children = (
 				CEBB226F295A4AB30088656D /* Statnder-Clean-MVP.app */,
+				CE081C6E29963E4E004C7B1B /* Statnder-Clean-MVPTests.xctest */,
+				CE081C7C29963E75004C7B1B /* NetworkLayer.framework */,
+				CE081C8529963E75004C7B1B /* NetworkLayerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,7 +252,73 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		CE081C7729963E75004C7B1B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE081C8E29963E75004C7B1B /* NetworkLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		CE081C6D29963E4E004C7B1B /* Statnder-Clean-MVPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE081C7629963E4E004C7B1B /* Build configuration list for PBXNativeTarget "Statnder-Clean-MVPTests" */;
+			buildPhases = (
+				CE081C6A29963E4E004C7B1B /* Sources */,
+				CE081C6B29963E4E004C7B1B /* Frameworks */,
+				CE081C6C29963E4E004C7B1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE081C7329963E4E004C7B1B /* PBXTargetDependency */,
+			);
+			name = "Statnder-Clean-MVPTests";
+			productName = "Statnder-Clean-MVPTests";
+			productReference = CE081C6E29963E4E004C7B1B /* Statnder-Clean-MVPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE081C7B29963E75004C7B1B /* NetworkLayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE081C9329963E75004C7B1B /* Build configuration list for PBXNativeTarget "NetworkLayer" */;
+			buildPhases = (
+				CE081C7729963E75004C7B1B /* Headers */,
+				CE081C7829963E75004C7B1B /* Sources */,
+				CE081C7929963E75004C7B1B /* Frameworks */,
+				CE081C7A29963E75004C7B1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetworkLayer;
+			productName = NetworkLayer;
+			productReference = CE081C7C29963E75004C7B1B /* NetworkLayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CE081C8429963E75004C7B1B /* NetworkLayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE081C9729963E75004C7B1B /* Build configuration list for PBXNativeTarget "NetworkLayerTests" */;
+			buildPhases = (
+				CE081C8129963E75004C7B1B /* Sources */,
+				CE081C8229963E75004C7B1B /* Frameworks */,
+				CE081C8329963E75004C7B1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE081C8829963E75004C7B1B /* PBXTargetDependency */,
+				CE081C8A29963E75004C7B1B /* PBXTargetDependency */,
+			);
+			name = NetworkLayerTests;
+			productName = NetworkLayerTests;
+			productReference = CE081C8529963E75004C7B1B /* NetworkLayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CEBB226E295A4AB30088656D /* Statnder-Clean-MVP */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEBB2283295A4AB30088656D /* Build configuration list for PBXNativeTarget "Statnder-Clean-MVP" */;
@@ -147,10 +326,12 @@
 				CEBB226B295A4AB30088656D /* Sources */,
 				CEBB226C295A4AB30088656D /* Frameworks */,
 				CEBB226D295A4AB30088656D /* Resources */,
+				CE081C9629963E75004C7B1B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CE081C9029963E75004C7B1B /* PBXTargetDependency */,
 			);
 			name = "Statnder-Clean-MVP";
 			productName = "Statnder-Clean-MVP";
@@ -167,6 +348,17 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					CE081C6D29963E4E004C7B1B = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = CEBB226E295A4AB30088656D;
+					};
+					CE081C7B29963E75004C7B1B = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					CE081C8429963E75004C7B1B = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = CEBB226E295A4AB30088656D;
+					};
 					CEBB226E295A4AB30088656D = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
@@ -186,11 +378,35 @@
 			projectRoot = "";
 			targets = (
 				CEBB226E295A4AB30088656D /* Statnder-Clean-MVP */,
+				CE081C6D29963E4E004C7B1B /* Statnder-Clean-MVPTests */,
+				CE081C7B29963E75004C7B1B /* NetworkLayer */,
+				CE081C8429963E75004C7B1B /* NetworkLayerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CE081C6C29963E4E004C7B1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE081C7A29963E75004C7B1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE081C8329963E75004C7B1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEBB226D295A4AB30088656D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -208,6 +424,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CE081C6A29963E4E004C7B1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE081C7129963E4E004C7B1B /* Statnder_Clean_MVPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE081C7829963E75004C7B1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE081C8029963E75004C7B1B /* NetworkLayer.docc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE081C8129963E75004C7B1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE081C8D29963E75004C7B1B /* NetworkLayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEBB226B295A4AB30088656D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -221,6 +461,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE081C7329963E4E004C7B1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEBB226E295A4AB30088656D /* Statnder-Clean-MVP */;
+			targetProxy = CE081C7229963E4E004C7B1B /* PBXContainerItemProxy */;
+		};
+		CE081C8829963E75004C7B1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE081C7B29963E75004C7B1B /* NetworkLayer */;
+			targetProxy = CE081C8729963E75004C7B1B /* PBXContainerItemProxy */;
+		};
+		CE081C8A29963E75004C7B1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEBB226E295A4AB30088656D /* Statnder-Clean-MVP */;
+			targetProxy = CE081C8929963E75004C7B1B /* PBXContainerItemProxy */;
+		};
+		CE081C9029963E75004C7B1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE081C7B29963E75004C7B1B /* NetworkLayer */;
+			targetProxy = CE081C8F29963E75004C7B1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CEBB2278295A4AB30088656D /* Main.storyboard */ = {
@@ -242,6 +505,144 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CE081C7429963E4E004C7B1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PP486X33A2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PitaStudio.Statnder-Clean-MVPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Statnder-Clean-MVP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Statnder-Clean-MVP";
+			};
+			name = Debug;
+		};
+		CE081C7529963E4E004C7B1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PP486X33A2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PitaStudio.Statnder-Clean-MVPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Statnder-Clean-MVP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Statnder-Clean-MVP";
+			};
+			name = Release;
+		};
+		CE081C9429963E75004C7B1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PP486X33A2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PitaStudio.NetworkLayer;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CE081C9529963E75004C7B1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PP486X33A2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PitaStudio.NetworkLayer;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CE081C9829963E75004C7B1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PP486X33A2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PitaStudio.NetworkLayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Statnder-Clean-MVP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Statnder-Clean-MVP";
+			};
+			name = Debug;
+		};
+		CE081C9929963E75004C7B1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PP486X33A2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PitaStudio.NetworkLayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Statnder-Clean-MVP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Statnder-Clean-MVP";
+			};
+			name = Release;
+		};
 		CEBB2281295A4AB30088656D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -417,6 +818,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CE081C7629963E4E004C7B1B /* Build configuration list for PBXNativeTarget "Statnder-Clean-MVPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE081C7429963E4E004C7B1B /* Debug */,
+				CE081C7529963E4E004C7B1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CE081C9329963E75004C7B1B /* Build configuration list for PBXNativeTarget "NetworkLayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE081C9429963E75004C7B1B /* Debug */,
+				CE081C9529963E75004C7B1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CE081C9729963E75004C7B1B /* Build configuration list for PBXNativeTarget "NetworkLayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE081C9829963E75004C7B1B /* Debug */,
+				CE081C9929963E75004C7B1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		CEBB226A295A4AB30088656D /* Build configuration list for PBXProject "Statnder-Clean-MVP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
