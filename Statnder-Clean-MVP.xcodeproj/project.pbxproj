@@ -14,6 +14,7 @@
 		CE081C8E29963E75004C7B1B /* NetworkLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = CE081C7E29963E75004C7B1B /* NetworkLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE081C9129963E75004C7B1B /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE081C7C29963E75004C7B1B /* NetworkLayer.framework */; };
 		CE081C9229963E75004C7B1B /* NetworkLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE081C7C29963E75004C7B1B /* NetworkLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE081C9B299649E0004C7B1B /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE081C9A299649E0004C7B1B /* RemoteFeedLoaderTests.swift */; };
 		CEBB2273295A4AB30088656D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB2272295A4AB30088656D /* AppDelegate.swift */; };
 		CEBB2275295A4AB30088656D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB2274295A4AB30088656D /* SceneDelegate.swift */; };
 		CEBB227A295A4AB30088656D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBB2278295A4AB30088656D /* Main.storyboard */; };
@@ -81,6 +82,7 @@
 		CE081C7F29963E75004C7B1B /* NetworkLayer.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NetworkLayer.docc; sourceTree = "<group>"; };
 		CE081C8529963E75004C7B1B /* NetworkLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE081C8C29963E75004C7B1B /* NetworkLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerTests.swift; sourceTree = "<group>"; };
+		CE081C9A299649E0004C7B1B /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
 		CEBB226F295A4AB30088656D /* Statnder-Clean-MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Statnder-Clean-MVP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBB2272295A4AB30088656D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBB2274295A4AB30088656D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				CE081C8C29963E75004C7B1B /* NetworkLayerTests.swift */,
+				CE081C9A299649E0004C7B1B /* RemoteFeedLoaderTests.swift */,
 			);
 			path = NetworkLayerTests;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE081C9B299649E0004C7B1B /* RemoteFeedLoaderTests.swift in Sources */,
 				CE081C8D29963E75004C7B1B /* NetworkLayerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,7 +517,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PP486X33A2;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "PitaStudio.Statnder-Clean-MVPTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -532,7 +536,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PP486X33A2;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "PitaStudio.Statnder-Clean-MVPTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -556,7 +560,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -587,7 +591,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -613,7 +617,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PP486X33A2;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = PitaStudio.NetworkLayerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -632,7 +636,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PP486X33A2;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = PitaStudio.NetworkLayerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
