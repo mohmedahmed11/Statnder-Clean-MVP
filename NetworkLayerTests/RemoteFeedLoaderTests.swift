@@ -25,33 +25,39 @@ protocol HTTPClinet {
     func get(with url: URL)
 }
 
-class HTTPClinetSpy: HTTPClinet {
-    
-    var requestedURL: URL?
-    
-    func get(with url: URL) {
-        requestedURL = url
-    }
-}
-
 final class Remote_Feed_Loader_Tests: XCTestCase {
 
     func test_init_doseNotRequestDataFromURL() {
-        let url = URL(string: "https://a-url.com")!
-        let clinet = HTTPClinetSpy()
-        let _ = RemoteFeedLoader(url: url, client: clinet)
-        
-        XCTAssertNil(clinet.requestedURL)
+        let (_, client) = makeSUT()
+        XCTAssertNil(client.requestedURL)
     }
     
     func test_load_requestDataFromURL() {
         let url = URL(string: "https://a-given-url.com")!
-        let clinet = HTTPClinetSpy()
-        let sut = RemoteFeedLoader(url: url, client: clinet)
+        
+        let (sut, client) = makeSUT(url: url)
         
         sut.load()
         
-        XCTAssertEqual(clinet.requestedURL, url )
+        XCTAssertEqual(client.requestedURL, url )
     }
+    
+    //MARK: - hellpers
+    
+    private func makeSUT(url: URL = URL(string: "https://a-url.com")!) -> (sut: RemoteFeedLoader, client: HTTPClinetSpy) {
+        let client = HTTPClinetSpy()
+        let sut = RemoteFeedLoader(url: url, client: client)
+        return (sut, client)
+    }
+    
+    class HTTPClinetSpy: HTTPClinet {
+        
+        var requestedURL: URL?
+        
+        func get(with url: URL) {
+            requestedURL = url
+        }
+    }
+
     
 }
