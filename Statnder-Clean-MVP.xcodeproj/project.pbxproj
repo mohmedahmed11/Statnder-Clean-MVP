@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		CE081C7129963E4E004C7B1B /* Statnder_Clean_MVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE081C7029963E4E004C7B1B /* Statnder_Clean_MVPTests.swift */; };
-		CE081C8029963E75004C7B1B /* NetworkLayer.docc in Sources */ = {isa = PBXBuildFile; fileRef = CE081C7F29963E75004C7B1B /* NetworkLayer.docc */; };
 		CE081C8629963E75004C7B1B /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE081C7C29963E75004C7B1B /* NetworkLayer.framework */; };
 		CE081C8D29963E75004C7B1B /* NetworkLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE081C8C29963E75004C7B1B /* NetworkLayerTests.swift */; };
 		CE081C8E29963E75004C7B1B /* NetworkLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = CE081C7E29963E75004C7B1B /* NetworkLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE081C9129963E75004C7B1B /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE081C7C29963E75004C7B1B /* NetworkLayer.framework */; };
 		CE081C9229963E75004C7B1B /* NetworkLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE081C7C29963E75004C7B1B /* NetworkLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE081C9B299649E0004C7B1B /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE081C9A299649E0004C7B1B /* RemoteFeedLoaderTests.swift */; };
+		CE081C9F299681BC004C7B1B /* NetworkLayer.docc in Sources */ = {isa = PBXBuildFile; fileRef = CE081C7F29963E75004C7B1B /* NetworkLayer.docc */; };
+		CE081CCD29968378004C7B1B /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE081CC929968351004C7B1B /* RemoteFeedLoader.swift */; };
+		CE081CCE2996837D004C7B1B /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE081CCB29968354004C7B1B /* FeedLoader.swift */; };
+		CE081CCF2996837F004C7B1B /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE081CCC29968354004C7B1B /* FeedItem.swift */; };
 		CEBB2273295A4AB30088656D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB2272295A4AB30088656D /* AppDelegate.swift */; };
 		CEBB2275295A4AB30088656D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB2274295A4AB30088656D /* SceneDelegate.swift */; };
 		CEBB227A295A4AB30088656D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBB2278295A4AB30088656D /* Main.storyboard */; };
@@ -83,6 +86,9 @@
 		CE081C8529963E75004C7B1B /* NetworkLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE081C8C29963E75004C7B1B /* NetworkLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerTests.swift; sourceTree = "<group>"; };
 		CE081C9A299649E0004C7B1B /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
+		CE081CC929968351004C7B1B /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
+		CE081CCB29968354004C7B1B /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
+		CE081CCC29968354004C7B1B /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		CEBB226F295A4AB30088656D /* Statnder-Clean-MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Statnder-Clean-MVP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBB2272295A4AB30088656D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBB2274295A4AB30088656D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				CE081C7E29963E75004C7B1B /* NetworkLayer.h */,
+				CE081CC829968351004C7B1B /* Feed API */,
+				CE081CCA29968354004C7B1B /* Feed Featuer */,
 				CE081C7F29963E75004C7B1B /* NetworkLayer.docc */,
 			);
 			path = NetworkLayer;
@@ -159,6 +167,23 @@
 				CE081C9A299649E0004C7B1B /* RemoteFeedLoaderTests.swift */,
 			);
 			path = NetworkLayerTests;
+			sourceTree = "<group>";
+		};
+		CE081CC829968351004C7B1B /* Feed API */ = {
+			isa = PBXGroup;
+			children = (
+				CE081CC929968351004C7B1B /* RemoteFeedLoader.swift */,
+			);
+			path = "Feed API";
+			sourceTree = "<group>";
+		};
+		CE081CCA29968354004C7B1B /* Feed Featuer */ = {
+			isa = PBXGroup;
+			children = (
+				CE081CCB29968354004C7B1B /* FeedLoader.swift */,
+				CE081CCC29968354004C7B1B /* FeedItem.swift */,
+			);
+			path = "Feed Featuer";
 			sourceTree = "<group>";
 		};
 		CEBB2266295A4AB30088656D = {
@@ -439,7 +464,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE081C8029963E75004C7B1B /* NetworkLayer.docc in Sources */,
+				CE081CCF2996837F004C7B1B /* FeedItem.swift in Sources */,
+				CE081CCE2996837D004C7B1B /* FeedLoader.swift in Sources */,
+				CE081CCD29968378004C7B1B /* RemoteFeedLoader.swift in Sources */,
+				CE081C9F299681BC004C7B1B /* NetworkLayer.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -765,6 +793,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CEBB228A295A4BFC0088656D /* Debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Dev";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -794,6 +823,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CEBB228C295A4C150088656D /* Release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
