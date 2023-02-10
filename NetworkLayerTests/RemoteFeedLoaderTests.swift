@@ -20,7 +20,7 @@ final class Remote_Feed_Loader_Tests: XCTestCase {
         
         let (sut, client) = makeSUT(url: url)
         
-        sut.load()
+        sut.load {_ in }
         
         XCTAssertEqual(client.requestedURLs, [url])
     }
@@ -30,8 +30,8 @@ final class Remote_Feed_Loader_Tests: XCTestCase {
         
         let (sut, client) = makeSUT(url: url)
         
-        sut.load()
-        sut.load()
+        sut.load {_ in }
+        sut.load {_ in }
         
         XCTAssertEqual(client.requestedURLs, [url, url] )
     }
@@ -59,7 +59,7 @@ final class Remote_Feed_Loader_Tests: XCTestCase {
     class HTTPClinetSpy: HTTPClinet {
         var messages = [(url: URL, completion:(Error) -> Void)]()
         
-        var requestedURLs: [URL] {
+        var requestedURLs: [URL]  {
             messages.map { $0.url }
         }
         
