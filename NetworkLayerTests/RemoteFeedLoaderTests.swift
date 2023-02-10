@@ -38,10 +38,13 @@ final class Remote_Feed_Loader_Tests: XCTestCase {
     
     func test_lead_deliversErrorOnClineError() {
         let (sut, client) = makeSUT()
-        client.error = NSError(domain: "test", code: 0)
-        
+
         var capturedErrors = [RemoteFeedLoader.Error]()
         sut.load {capturedErrors.append($0)}
+        
+        let clinetError = NSError(domain: "test", code: 0)
+        client.completions[0](clinetError)
+        
         XCTAssertEqual(capturedErrors, [.connectivity])
     }
     
@@ -55,13 +58,10 @@ final class Remote_Feed_Loader_Tests: XCTestCase {
     
     class HTTPClinetSpy: HTTPClinet {
         var requestedURLs = [URL]()
-        
-        var error: Error?
+        var completions = [(Error) -> Void]()
         
         func get(with url: URL, completion: @escaping (Error) -> Void) {
-            if let error = error {
-                completion(error )
-            }
+            completions.append(completion)
             requestedURLs.append(url)
         }
     }
