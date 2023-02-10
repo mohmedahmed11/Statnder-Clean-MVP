@@ -43,7 +43,7 @@ final class Remote_Feed_Loader_Tests: XCTestCase {
         sut.load {capturedErrors.append($0)}
         
         let clinetError = NSError(domain: "test", code: 0)
-        client.completions[0](clinetError)
+        client.complete(with: clinetError)
         
         XCTAssertEqual(capturedErrors, [.connectivity])
     }
@@ -63,6 +63,10 @@ final class Remote_Feed_Loader_Tests: XCTestCase {
         func get(with url: URL, completion: @escaping (Error) -> Void) {
             completions.append(completion)
             requestedURLs.append(url)
+        }
+        
+        func complete(with error: Error, at index: Int = 0) {
+            completions[index](error)
         }
     }
 
