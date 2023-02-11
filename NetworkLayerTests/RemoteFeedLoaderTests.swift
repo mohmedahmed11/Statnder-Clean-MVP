@@ -63,6 +63,19 @@ final class Remote_Feed_Loader_Tests: XCTestCase {
         } 
     }
     
+    func test_lead_deliversErrorOn200HTTPResponce() {
+        let (sut, client) = makeSUT()
+
+        var capturedErrors = [RemoteFeedLoader.Error]()
+        sut.load {capturedErrors.append($0)}
+        
+        let invaledData = Data("invaled data".utf8)
+        client.complete(statusCode: 200,data: invaledData)
+        
+        XCTAssertEqual(capturedErrors, [.invalidData])
+    }
+    
+    
     //MARK: - hellpers
     
     private func makeSUT(url: URL = URL(string: "https://a-url.com")!) -> (sut: RemoteFeedLoader, client: HTTPClinetSpy) {
@@ -86,9 +99,9 @@ final class Remote_Feed_Loader_Tests: XCTestCase {
             messages[index].completion(.failuer(error))
         }
         
-        func complete(statusCode code: Int, at index: Int = 0) {
+        func complete(statusCode code: Int, data: Data = Data(), at index: Int = 0) {
             let response = HTTPURLResponse(url: requestedURLs[index], statusCode: code, httpVersion: nil, headerFields: nil)!
-            messages[index].completion(.success(response ))
+            messages[index].completion(.success(response, data))
         }
     }
 
