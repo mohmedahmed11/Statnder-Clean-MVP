@@ -24,19 +24,24 @@ public final class RemoteFeedLoader {
         case connectivity
         case invalidData
     }
+    
+    public enum Result: Equatable {
+        case success([FeedItem])
+        case failuer(Error)
+    }
    
     public init(url: URL, client: HTTPClinet) {
        self.url = url
        self.client = client
    }
    
-    public func load(completion: @escaping (Error) -> Void) {
+    public func load(completion: @escaping (Result) -> Void) {
         client.get(with: url) { result in
             switch result {
             case .success:
-                completion(.invalidData)
+                completion(.failuer(.invalidData))
             case .failuer:
-                completion(.connectivity)
+                completion(.failuer(.connectivity))
             }
         }
    }
