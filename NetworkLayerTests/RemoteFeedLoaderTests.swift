@@ -96,7 +96,15 @@ final class Remote_Feed_Loader_Tests: XCTestCase {
     private func makeSUT(url: URL = URL(string: "https://a-url.com")!) -> (sut: RemoteFeedLoader, client: HTTPClinetSpy) {
         let client = HTTPClinetSpy()
         let sut = RemoteFeedLoader(url: url, client: client)
+        trackForMemoryLeaks(client)
+        trackForMemoryLeaks(sut)
         return (sut, client)
+    }
+    
+    private func trackForMemoryLeaks(_ instance: AnyObject, file: StaticString = #file, line: UInt = #line) {
+        addTeardownBlock { [weak instance] in
+            XCTAssertNil(instance, file: file, line: line)
+        }
     }
     
     private func makeItem(id: UUID, description: String? = nil, location: String? = nil, imageUrl: URL) -> (model: FeedItem, json: [String: Any]) {
