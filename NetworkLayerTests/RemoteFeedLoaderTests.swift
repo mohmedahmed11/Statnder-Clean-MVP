@@ -90,6 +90,19 @@ final class Remote_Feed_Loader_Tests: XCTestCase {
         }
     }
     
+    func test_lead_doseNotDeliverResultAfterSUTInstanceHasBeenDeallocated() {
+        let url = URL(string: "https:any-url.com")!
+        let clinet = HTTPClinetSpy()
+        var sut: RemoteFeedLoader? = RemoteFeedLoader(url: url, client: clinet)
+        
+        var capturedResults = [RemoteFeedLoader.Result]()
+        sut?.load {capturedResults.append($0)}
+        sut = nil
+        clinet.complete(statusCode: 200, data: makeJSON([]))
+        
+        XCTAssertTrue(capturedResults.isEmpty)
+    }
+    
     
     //MARK: - hellpers
     
