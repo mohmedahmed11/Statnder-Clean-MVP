@@ -12,7 +12,7 @@ public enum LoadFeedResult {
     case failuer(Error)
 }
 
-protocol FeedLoader {
+public protocol FeedLoader {
     
     func load(completion: @escaping (LoadFeedResult) -> Void)
 }
