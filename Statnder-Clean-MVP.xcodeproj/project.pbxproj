@@ -20,6 +20,7 @@
 		CE081CCF2996837F004C7B1B /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE081CCC29968354004C7B1B /* FeedItem.swift */; };
 		CE081CD22998CEBA004C7B1B /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE081CD12998CEBA004C7B1B /* HTTPClient.swift */; };
 		CE081CD42998CF84004C7B1B /* FeedItemMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE081CD32998CF84004C7B1B /* FeedItemMapper.swift */; };
+		CEA1387629C35F590023A781 /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1387529C35F590023A781 /* URLSessionHTTPClientTests.swift */; };
 		CEBB2273295A4AB30088656D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB2272295A4AB30088656D /* AppDelegate.swift */; };
 		CEBB2275295A4AB30088656D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB2274295A4AB30088656D /* SceneDelegate.swift */; };
 		CEBB227A295A4AB30088656D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBB2278295A4AB30088656D /* Main.storyboard */; };
@@ -93,6 +94,7 @@
 		CE081CCC29968354004C7B1B /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		CE081CD12998CEBA004C7B1B /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		CE081CD32998CF84004C7B1B /* FeedItemMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemMapper.swift; sourceTree = "<group>"; };
+		CEA1387529C35F590023A781 /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 		CEBB226F295A4AB30088656D /* Statnder-Clean-MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Statnder-Clean-MVP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBB2272295A4AB30088656D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBB2274295A4AB30088656D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				CE081C9A299649E0004C7B1B /* RemoteFeedLoaderTests.swift */,
+				CEA1387529C35F590023A781 /* URLSessionHTTPClientTests.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE081C9B299649E0004C7B1B /* RemoteFeedLoaderTests.swift in Sources */,
+				CEA1387629C35F590023A781 /* URLSessionHTTPClientTests.swift in Sources */,
 				CE081C8D29963E75004C7B1B /* NetworkLayerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
