@@ -30,7 +30,7 @@ class URLSessionHTTPClient {
          URLProtocolStub.startInterceptingRequests()
          let url = URL(string: "https://any-url.com")!
          let error = NSError(domain: "any error", code: 1)
-         URLProtocolStub.stub(url: url, error: error)
+         URLProtocolStub.stub(url: url, data: nil, response: nil, error: error)
          
          let sut = URLSessionHTTPClient()
          
@@ -58,6 +58,8 @@ class URLSessionHTTPClient {
          private static var stubs = [URL: Stub]()
          
          private struct Stub {
+             var data: Data?
+             var response: URLResponse?
              var error: Error?
          }
          
@@ -70,8 +72,8 @@ class URLSessionHTTPClient {
              stubs = [:]
          }
          
-         static func stub(url: URL, error: Error? = nil) {
-             stubs[url] = Stub(error: error)
+         static func stub(url: URL, data: Data?, response: URLResponse?, error: Error? = nil) {
+             stubs[url] = Stub(data: data, response: response, error: error)
          }
          
          override class func canInit(with request: URLRequest) -> Bool {
@@ -89,6 +91,14 @@ class URLSessionHTTPClient {
              
              if let error = stub.error {
                  client?.urlProtocol(self, didFailWithError: error)
+             }
+             
+             if let data = stub.data {
+                 client?.urlProtocol(self, didLoad: data)
+             }
+             
+             if let response = stub.response {
+                 client?.urlProtocol(self, didReceive: response, cacheStoragePolicy: .allowed)
              }
              
              client?.urlProtocolDidFinishLoading(self)
