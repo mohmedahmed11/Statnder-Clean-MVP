@@ -10,6 +10,8 @@ import NetworkLayer
 
 class URLSessionHTTPClient {
      private let session: URLSession
+    
+    struct UnexpectedValuesRepresentation: Error {}
 
     init(session: URLSession = .shared) {
          self.session = session
@@ -19,6 +21,8 @@ class URLSessionHTTPClient {
          session.dataTask(with: url) { _, _, error in
              if let error = error {
                  compeletion(.failuer(error))
+             }else {
+                 compeletion(.failuer(UnexpectedValuesRepresentation()))
              }
          }.resume()
      }
@@ -63,6 +67,25 @@ class URLSessionHTTPClient {
                  XCTAssertNotNil(recivedError)
              default:
                  XCTFail("expected failuer with \(error) but we go \(result) instade")
+                 
+             }
+             exp.fulfill()
+         }
+         
+         wait(for: [exp], timeout: 1.0)
+     }
+     
+     func test_getFromURL_failsOnAllNilValues() {
+         URLProtocolStub.stub(data: nil, response: nil, error: nil)
+         
+         let exp = expectation(description: "waite for completion")
+         
+         makeSUT().get(from: anyURL()) { result in
+             switch result {
+             case .failuer:
+                 break
+             default:
+                 XCTFail("expected failuer but we go \(result) instade")
                  
              }
              exp.fulfill()
