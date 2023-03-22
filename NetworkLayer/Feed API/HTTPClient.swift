@@ -13,5 +13,5 @@ public enum HTTPClientResult {
 }
 
 public protocol HTTPClinet {
-    func get(with url: URL, completion: @escaping (HTTPClientResult) -> Void)
+    func get(from url: URL, compeletion: @escaping  (HTTPClientResult) -> Void)
 }

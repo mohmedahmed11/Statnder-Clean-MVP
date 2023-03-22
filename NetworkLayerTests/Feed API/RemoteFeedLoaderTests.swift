@@ -166,8 +166,8 @@ final class Remote_Feed_Loader_Tests: XCTestCase {
             messages.map { $0.url }
         }
         
-        func get(with url: URL, completion: @escaping (HTTPClientResult) -> Void) {
-            messages.append((url, completion))
+        func get(from url: URL, compeletion: @escaping  (HTTPClientResult) -> Void) {
+            messages.append((url, compeletion))
         }
         
         func complete(with error: Error, at index: Int = 0) {
