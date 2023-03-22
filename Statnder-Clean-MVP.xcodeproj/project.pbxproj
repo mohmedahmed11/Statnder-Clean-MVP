@@ -34,6 +34,7 @@
 		CEBB2298295A6E8A0088656D /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBB2297295A6E8A0088656D /* Events.storyboard */; };
 		CEBB229A295A6EAE0088656D /* Todos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBB2299295A6EAE0088656D /* Todos.storyboard */; };
 		CEBB229C295A6ED30088656D /* Bookmark.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBB229B295A6ED30088656D /* Bookmark.storyboard */; };
+		CEE75F0529CAFA14005510C4 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE75F0429CAFA14005510C4 /* URLSessionHTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		CEBB2297295A6E8A0088656D /* Events.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
 		CEBB2299295A6EAE0088656D /* Todos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Todos.storyboard; sourceTree = "<group>"; };
 		CEBB229B295A6ED30088656D /* Bookmark.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bookmark.storyboard; sourceTree = "<group>"; };
+		CEE75F0429CAFA14005510C4 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 				CE081CC929968351004C7B1B /* RemoteFeedLoader.swift */,
 				CE081CD32998CF84004C7B1B /* FeedItemMapper.swift */,
 				CE081CD12998CEBA004C7B1B /* HTTPClient.swift */,
+				CEE75F0429CAFA14005510C4 /* URLSessionHTTPClient.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE75F0529CAFA14005510C4 /* URLSessionHTTPClient.swift in Sources */,
 				CE081CCF2996837F004C7B1B /* FeedItem.swift in Sources */,
 				CE081CD22998CEBA004C7B1B /* HTTPClient.swift in Sources */,
 				CE081CCE2996837D004C7B1B /* FeedLoader.swift in Sources */,
