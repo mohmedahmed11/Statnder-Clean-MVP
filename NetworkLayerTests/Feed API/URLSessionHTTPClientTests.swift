@@ -80,45 +80,22 @@ class URLSessionHTTPClient {
      func test_getFromURL_suceedsOnHTTPURLResponseWithData() {
          let data = anyData()
          let response = anyHTTPURLResponse()
-         URLProtocolStub.stub(data: data, response: response)
+         let recivedValues = resultValuesFor(data: data, response: response, error: nil)
          
-         let exp = expectation(description: "waite for completion")
-         
-         makeSUT().get(from: anyURL()) { result in
-             switch result {
-             case let .success(recivedRespnse, recivedData):
-                 XCTAssertEqual(recivedData, data)
-                 XCTAssertEqual(recivedRespnse.url, response.url)
-                 XCTAssertEqual(recivedRespnse.statusCode, response.statusCode)
-             default:
-                 XCTFail("expected seccess but we go \(result) instade")
-             }
-             exp.fulfill()
-         }
-         
-         wait(for: [exp], timeout: 1.0)
+         XCTAssertEqual(recivedValues?.data, data)
+         XCTAssertEqual(recivedValues?.response.url, response.url)
+         XCTAssertEqual(recivedValues?.response.statusCode, response.statusCode)
      }
      
      func test_getFromURL_suceedsWithEmptyDataOnHTTPURLResponseWithNilData() {
          let response = anyHTTPURLResponse()
-         URLProtocolStub.stub(data: nil, response: response)
-         
-         let exp = expectation(description: "waite for completion")
-         
-         makeSUT().get(from: anyURL()) { result in
-             switch result {
-             case let .success(recivedRespnse, recivedData):
-                 let emptyData = Data()
-                 XCTAssertEqual(recivedData, emptyData)
-                 XCTAssertEqual(recivedRespnse.url, response.url)
-                 XCTAssertEqual(recivedRespnse.statusCode, response.statusCode)
-             default:
-                 XCTFail("expected seccess but we go \(result) instade")
-             }
-             exp.fulfill()
-         }
-         
-         wait(for: [exp], timeout: 1.0)
+         let recivedValues = resultValuesFor(data: nil, response: response, error: nil)
+ 
+         let emptyData = Data()
+         XCTAssertEqual(recivedValues?.data, emptyData)
+         XCTAssertEqual(recivedValues?.response.url, response.url)
+         XCTAssertEqual(recivedValues?.response.statusCode, response.statusCode)
+   
      }
 
      // MARK: - Helpers
@@ -129,25 +106,44 @@ class URLSessionHTTPClient {
          return sut
      }
      
+     private func resultValuesFor(data: Data?, response: URLResponse?, error: Error?, file: StaticString = #file, line: UInt = #line) -> (data: Data, response: HTTPURLResponse)? {
+         let result = resultFor(data: data, response: response, error: error, file: file, line: line)
+
+         switch result {
+         case let .success(response, data):
+             return (data, response)
+         default:
+             XCTFail("expected success but we go \(result) instade", file: file, line: line)
+             return nil
+         }
+     }
+     
      private func resultErrorFor(data: Data?, response: URLResponse?, error: Error?, file: StaticString = #file, line: UInt = #line) -> Error? {
+         let result = resultFor(data: data, response: response, error: error, file: file, line: line)
+         
+         switch result {
+         case let .failuer(error):
+             return error
+         default:
+             XCTFail("expected failuer  but we go \(result) instade", file: file, line: line)
+             return nil
+         }
+         
+     }
+     
+     private func resultFor(data: Data?, response: URLResponse?, error: Error?, file: StaticString = #file, line: UInt = #line) -> HTTPClientResult {
          URLProtocolStub.stub(data: data, response: response, error: error)
          let sut = makeSUT(file: file, line: line)
          let exp = expectation(description: "waite for completion")
          
-         var recivedError: Error?
+         var recivedResult: HTTPClientResult!
          sut.get(from: anyURL()) { result in
-             switch result {
-             case let .failuer(error):
-                 recivedError = error
-             default:
-                 XCTFail("expected failuer  but we go \(result) instade", file: file, line: line)
-                 
-             }
+             recivedResult = result
              exp.fulfill()
          }
          
          wait(for: [exp], timeout: 1.0)
-         return recivedError
+         return recivedResult
      }
      
      private func anyURL() -> URL {
