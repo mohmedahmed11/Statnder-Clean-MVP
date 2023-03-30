@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pY9-5V-EaB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pY9-5V-EaB">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -384,7 +384,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Statistics" id="evE-U6-und">
                         <barButtonItem key="rightBarButtonItem" changesSelectionAsPrimaryAction="YES" id="8B8-Bv-iwm">
-                            <imageReference key="image" image="bell.fill" catalog="system" variableValue="1"/>
+                            <imageReference key="image" image="bell" catalog="system" variableValue="1"/>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
@@ -414,7 +414,7 @@
     </scenes>
     <resources>
         <image name="app.fill" catalog="system" width="128" height="114"/>
-        <image name="bell.fill" catalog="system" width="123" height="128"/>
+        <image name="bell" catalog="system" width="125" height="128"/>
         <image name="dollarsign.square.fill" catalog="system" width="128" height="114"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>

@@ -18,6 +18,10 @@
 		CE081CCD29968378004C7B1B /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE081CC929968351004C7B1B /* RemoteFeedLoader.swift */; };
 		CE081CCE2996837D004C7B1B /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE081CCB29968354004C7B1B /* FeedLoader.swift */; };
 		CE081CCF2996837F004C7B1B /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE081CCC29968354004C7B1B /* FeedItem.swift */; };
+		CE081CD22998CEBA004C7B1B /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE081CD12998CEBA004C7B1B /* HTTPClient.swift */; };
+		CE081CD42998CF84004C7B1B /* FeedItemMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE081CD32998CF84004C7B1B /* FeedItemMapper.swift */; };
+		CEA1387629C35F590023A781 /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1387529C35F590023A781 /* URLSessionHTTPClientTests.swift */; };
+		CEA1387B29C747A40023A781 /* XCTestCase+MemoryLeakTraking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1387A29C747A40023A781 /* XCTestCase+MemoryLeakTraking.swift */; };
 		CEBB2273295A4AB30088656D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB2272295A4AB30088656D /* AppDelegate.swift */; };
 		CEBB2275295A4AB30088656D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB2274295A4AB30088656D /* SceneDelegate.swift */; };
 		CEBB227A295A4AB30088656D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBB2278295A4AB30088656D /* Main.storyboard */; };
@@ -30,6 +34,8 @@
 		CEBB2298295A6E8A0088656D /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBB2297295A6E8A0088656D /* Events.storyboard */; };
 		CEBB229A295A6EAE0088656D /* Todos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBB2299295A6EAE0088656D /* Todos.storyboard */; };
 		CEBB229C295A6ED30088656D /* Bookmark.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBB229B295A6ED30088656D /* Bookmark.storyboard */; };
+		CEE75F0529CAFA14005510C4 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE75F0429CAFA14005510C4 /* URLSessionHTTPClient.swift */; };
+		CEE75F0D29CC2C99005510C4 /* NetworkLayerAPIEndToEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE75F0C29CC2C99005510C4 /* NetworkLayerAPIEndToEndTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +67,13 @@
 			remoteGlobalIDString = CE081C7B29963E75004C7B1B;
 			remoteInfo = NetworkLayer;
 		};
+		CEE75F0E29CC2C99005510C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEBB2267295A4AB30088656D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEBB226E295A4AB30088656D;
+			remoteInfo = "Statnder-Clean-MVP";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -89,6 +102,10 @@
 		CE081CC929968351004C7B1B /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 		CE081CCB29968354004C7B1B /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		CE081CCC29968354004C7B1B /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		CE081CD12998CEBA004C7B1B /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		CE081CD32998CF84004C7B1B /* FeedItemMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemMapper.swift; sourceTree = "<group>"; };
+		CEA1387529C35F590023A781 /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
+		CEA1387A29C747A40023A781 /* XCTestCase+MemoryLeakTraking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTraking.swift"; sourceTree = "<group>"; };
 		CEBB226F295A4AB30088656D /* Statnder-Clean-MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Statnder-Clean-MVP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBB2272295A4AB30088656D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBB2274295A4AB30088656D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +122,9 @@
 		CEBB2297295A6E8A0088656D /* Events.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
 		CEBB2299295A6EAE0088656D /* Todos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Todos.storyboard; sourceTree = "<group>"; };
 		CEBB229B295A6ED30088656D /* Bookmark.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bookmark.storyboard; sourceTree = "<group>"; };
+		CEE75F0429CAFA14005510C4 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		CEE75F0A29CC2C99005510C4 /* NetworkLayerAPIEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerAPIEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE75F0C29CC2C99005510C4 /* NetworkLayerAPIEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerAPIEndToEndTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +158,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEE75F0729CC2C99005510C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -164,7 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				CE081C8C29963E75004C7B1B /* NetworkLayerTests.swift */,
-				CE081C9A299649E0004C7B1B /* RemoteFeedLoaderTests.swift */,
+				CE081CD52998DA56004C7B1B /* Feed API */,
 			);
 			path = NetworkLayerTests;
 			sourceTree = "<group>";
@@ -173,6 +200,9 @@
 			isa = PBXGroup;
 			children = (
 				CE081CC929968351004C7B1B /* RemoteFeedLoader.swift */,
+				CE081CD32998CF84004C7B1B /* FeedItemMapper.swift */,
+				CE081CD12998CEBA004C7B1B /* HTTPClient.swift */,
+				CEE75F0429CAFA14005510C4 /* URLSessionHTTPClient.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -186,6 +216,24 @@
 			path = "Feed Featuer";
 			sourceTree = "<group>";
 		};
+		CE081CD52998DA56004C7B1B /* Feed API */ = {
+			isa = PBXGroup;
+			children = (
+				CEA1387929C747640023A781 /* Helpers */,
+				CE081C9A299649E0004C7B1B /* RemoteFeedLoaderTests.swift */,
+				CEA1387529C35F590023A781 /* URLSessionHTTPClientTests.swift */,
+			);
+			path = "Feed API";
+			sourceTree = "<group>";
+		};
+		CEA1387929C747640023A781 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CEA1387A29C747A40023A781 /* XCTestCase+MemoryLeakTraking.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		CEBB2266295A4AB30088656D = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +241,7 @@
 				CE081C6F29963E4E004C7B1B /* Statnder-Clean-MVPTests */,
 				CE081C7D29963E75004C7B1B /* NetworkLayer */,
 				CE081C8B29963E75004C7B1B /* NetworkLayerTests */,
+				CEE75F0B29CC2C99005510C4 /* NetworkLayerAPIEndToEndTests */,
 				CEBB2270295A4AB30088656D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -204,6 +253,7 @@
 				CE081C6E29963E4E004C7B1B /* Statnder-Clean-MVPTests.xctest */,
 				CE081C7C29963E75004C7B1B /* NetworkLayer.framework */,
 				CE081C8529963E75004C7B1B /* NetworkLayerTests.xctest */,
+				CEE75F0A29CC2C99005510C4 /* NetworkLayerAPIEndToEndTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -276,6 +326,14 @@
 				CEBB2292295A65E40088656D /* UIView.swift */,
 			);
 			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		CEE75F0B29CC2C99005510C4 /* NetworkLayerAPIEndToEndTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEE75F0C29CC2C99005510C4 /* NetworkLayerAPIEndToEndTests.swift */,
+			);
+			path = NetworkLayerAPIEndToEndTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,6 +424,24 @@
 			productReference = CEBB226F295A4AB30088656D /* Statnder-Clean-MVP.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CEE75F0929CC2C99005510C4 /* NetworkLayerAPIEndToEndTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEE75F1029CC2C99005510C4 /* Build configuration list for PBXNativeTarget "NetworkLayerAPIEndToEndTests" */;
+			buildPhases = (
+				CEE75F0629CC2C99005510C4 /* Sources */,
+				CEE75F0729CC2C99005510C4 /* Frameworks */,
+				CEE75F0829CC2C99005510C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEE75F0F29CC2C99005510C4 /* PBXTargetDependency */,
+			);
+			name = NetworkLayerAPIEndToEndTests;
+			productName = NetworkLayerAPIEndToEndTests;
+			productReference = CEE75F0A29CC2C99005510C4 /* NetworkLayerAPIEndToEndTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -373,7 +449,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					CE081C6D29963E4E004C7B1B = {
@@ -389,6 +465,10 @@
 					};
 					CEBB226E295A4AB30088656D = {
 						CreatedOnToolsVersion = 14.0.1;
+					};
+					CEE75F0929CC2C99005510C4 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CEBB226E295A4AB30088656D;
 					};
 				};
 			};
@@ -409,6 +489,7 @@
 				CE081C6D29963E4E004C7B1B /* Statnder-Clean-MVPTests */,
 				CE081C7B29963E75004C7B1B /* NetworkLayer */,
 				CE081C8429963E75004C7B1B /* NetworkLayerTests */,
+				CEE75F0929CC2C99005510C4 /* NetworkLayerAPIEndToEndTests */,
 			);
 		};
 /* End PBXProject section */
@@ -449,6 +530,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEE75F0829CC2C99005510C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -464,8 +552,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE75F0529CAFA14005510C4 /* URLSessionHTTPClient.swift in Sources */,
 				CE081CCF2996837F004C7B1B /* FeedItem.swift in Sources */,
+				CE081CD22998CEBA004C7B1B /* HTTPClient.swift in Sources */,
 				CE081CCE2996837D004C7B1B /* FeedLoader.swift in Sources */,
+				CE081CD42998CF84004C7B1B /* FeedItemMapper.swift in Sources */,
 				CE081CCD29968378004C7B1B /* RemoteFeedLoader.swift in Sources */,
 				CE081C9F299681BC004C7B1B /* NetworkLayer.docc in Sources */,
 			);
@@ -476,6 +567,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE081C9B299649E0004C7B1B /* RemoteFeedLoaderTests.swift in Sources */,
+				CEA1387B29C747A40023A781 /* XCTestCase+MemoryLeakTraking.swift in Sources */,
+				CEA1387629C35F590023A781 /* URLSessionHTTPClientTests.swift in Sources */,
 				CE081C8D29963E75004C7B1B /* NetworkLayerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +582,14 @@
 				CEBB2273295A4AB30088656D /* AppDelegate.swift in Sources */,
 				CEBB2291295A52BF0088656D /* ViewController.swift in Sources */,
 				CEBB2275295A4AB30088656D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEE75F0629CC2C99005510C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE75F0D29CC2C99005510C4 /* NetworkLayerAPIEndToEndTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +615,11 @@
 			isa = PBXTargetDependency;
 			target = CE081C7B29963E75004C7B1B /* NetworkLayer */;
 			targetProxy = CE081C8F29963E75004C7B1B /* PBXContainerItemProxy */;
+		};
+		CEE75F0F29CC2C99005510C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEBB226E295A4AB30088656D /* Statnder-Clean-MVP */;
+			targetProxy = CEE75F0E29CC2C99005510C4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -849,6 +955,44 @@
 			};
 			name = Release;
 		};
+		CEE75F1129CC2C99005510C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PP486X33A2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PitaStudio.NetworkLayerAPIEndToEndTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Statnder-Clean-MVP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Statnder-Clean-MVP";
+			};
+			name = Debug;
+		};
+		CEE75F1229CC2C99005510C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PP486X33A2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PitaStudio.NetworkLayerAPIEndToEndTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Statnder-Clean-MVP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Statnder-Clean-MVP";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -893,6 +1037,15 @@
 			buildConfigurations = (
 				CEBB2284295A4AB30088656D /* Debug */,
 				CEBB2285295A4AB30088656D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CEE75F1029CC2C99005510C4 /* Build configuration list for PBXNativeTarget "NetworkLayerAPIEndToEndTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEE75F1129CC2C99005510C4 /* Debug */,
+				CEE75F1229CC2C99005510C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
